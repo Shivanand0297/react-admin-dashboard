@@ -68,7 +68,20 @@
   
   .bottom{
     display: flex;
+    flex-direction: column;
     padding-left: 15px;
+
+    span{
+      font-size: 10px;
+      font-weight: bold;
+      color: #999999;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .theme{
+      display: flex;
+    }
 
     .colorOption{
       width: 20px;
