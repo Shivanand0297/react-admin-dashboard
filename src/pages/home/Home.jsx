@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Widget from "../../components/widget/Widget"
 import Featured from "../../components/featured/Featured"
 import Chart from "../../components/chart/Chart"
+import DataTable from "../../components/table/DataTable"
 import "./home.scss"
 
 const Home = () => {
@@ -17,9 +18,13 @@ const Home = () => {
           <Widget type="earning" />
           <Widget type="balance" />
         </div>
-        <div class="charts">
+        <div className="charts">
           <Featured/>
           <Chart/>
+        </div>
+        <div className="tableContainer">
+          <div class="tableTitle">Latest Transactions</div>
+          <DataTable/>
         </div>
       </div>
     </div>

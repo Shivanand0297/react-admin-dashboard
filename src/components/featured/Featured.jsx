@@ -6,40 +6,40 @@ import "./featured.scss"
 const Featured = () => {
   return (
     <div className="featured" >
-      <div class="top">
-        <h1 class="title">Total Revenue</h1>
+      <div className="top">
+        <h1 className="title">Total Revenue</h1>
         <MoreVert fontSize="small" />
       </div>
-      <div class="bottom">
-        <div class="progressBar">
+      <div className="bottom">
+        <div className="progressBar">
           <CircularProgressbar value={66} text={`66%`} strokeWidth={3} styles={ buildStyles({
             pathColor: "#76b900",
             textColor: "#76b900"
           })} />
         </div>
-        <p class="title">Total sales made today</p>
-        <p class="amount">$ 1400</p>
-        <p class="desc">Previous transactions processing, Last payment may not be included</p>
-        <div class="summary">
-          <div class="item">
-            <div class="itemTitle">Target</div>
-            <div class="itemResult negative">
+        <p className="title">Total sales made today</p>
+        <p className="amount">$ 1400</p>
+        <p className="desc">Previous transactions processing, Last payment may not be included</p>
+        <div className="summary">
+          <div className="item">
+            <div className="itemTitle">Target</div>
+            <div className="itemResult negative">
               <KeyboardArrowDown fontSize="small" />
-              <div class="resultAmount">$32.4k</div>
+              <div className="resultAmount">$32.4k</div>
             </div>
           </div>
-          <div class="item">
-            <div class="itemTitle">Last Week</div>
-            <div class="itemResult positive">
+          <div className="item">
+            <div className="itemTitle">Last Week</div>
+            <div className="itemResult positive">
               <KeyboardArrowUp fontSize="small" />
-              <div class="resultAmount">$32.4k</div>
+              <div className="resultAmount">$32.4k</div>
             </div>
           </div>
-          <div class="item">
-            <div class="itemTitle">Last Month</div>
-            <div class="itemResult negative">
+          <div className="item">
+            <div className="itemTitle">Last Month</div>
+            <div className="itemResult negative">
               <KeyboardArrowDown fontSize="small" />
-              <div class="resultAmount">$32.4k</div>
+              <div className="resultAmount">$32.4k</div>
             </div>
           </div>
         </div>
