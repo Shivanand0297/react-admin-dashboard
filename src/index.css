@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   --theme-color: #76b900;
   --border-color: #e2e1e1;
+  --gray-color: #a0a0a0;
 }
 
 code {
