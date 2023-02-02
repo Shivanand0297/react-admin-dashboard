@@ -19,16 +19,13 @@
 
     &.Approved{
       color: #008000;
-      background-color: rgba(0, 128, 0, 0.338);
+      background-color: rgba(169, 212, 169, 0.729);
     }
     &.Pending{
       color: #dbac35;
-      background-color: rgba(220, 173, 52, 0.231);
+      background-color: rgba(243, 237, 223, 0.758);
     }
-    &.Approved{
-      color: green;
-      background-color: rgba(0, 128, 0, 0.338);
-    }
+    
   }
 
 }

@@ -5,9 +5,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import "./dataTable.scss"
+import "./list.scss"
 
-const DataTable = () => {
+const List = () => {
 
   const rows = [
 
@@ -85,8 +85,8 @@ const DataTable = () => {
             >
               <TableCell className='tableCell' >{row.id}</TableCell>
               <TableCell className='tableCell' >
-                <div class="cellWrapper">
-                <img src={row.img} alt="productImg" class="productImg"/>
+                <div className="cellWrapper">
+                <img src={row.img} alt="productImg" className="productImg"/>
                 {row.product}
                 </div>
               </TableCell>
@@ -105,4 +105,4 @@ const DataTable = () => {
   )
 }
 
-export default DataTable
+export default List
