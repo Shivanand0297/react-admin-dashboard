@@ -16,6 +16,7 @@
         font-weight: bold;
         color: var(--theme-color);
       }
+
   }
 
   hr{
@@ -100,5 +101,9 @@
     
   }
 
+// common to all
+  .link{
+    text-decoration: none;
+  }
 
 }

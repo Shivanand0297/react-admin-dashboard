@@ -10,12 +10,17 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.scss"
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className="sidebar" >
       <div className="top">
-        <span className="logo">ShivaAdmin</span>
+
+        <Link to="/" className='link' >
+          <span className="logo">ShivaAdmin</span>
+        </Link>
+
       </div>
       <hr/>
       <div className="center">
@@ -26,14 +31,19 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p>List</p>
-          <li>
-            <PersonIcon  className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <InventoryIcon className="icon" />
-            <span>Products</span>
-          </li>
+
+          <Link to="/users" className='link' >
+            <li>
+              <PersonIcon  className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" className='link' >
+            <li>
+              <InventoryIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Delivery</span>
