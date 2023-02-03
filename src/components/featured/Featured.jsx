@@ -8,7 +8,7 @@ const Featured = () => {
     <div className="featured" >
       <div className="top">
         <h1 className="title">Total Revenue</h1>
-        <MoreVert fontSize="small" />
+        <MoreVert fontSize="small" className="titleOptions" />
       </div>
       <div className="bottom">
         <div className="progressBar">
