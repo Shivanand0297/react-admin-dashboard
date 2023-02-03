@@ -40,8 +40,8 @@ const DataTable = () => {
       <DataGrid
         rows={rowData}
         columns={userColumn.concat(actionColumn)}
-        pageSize={8}
-        rowsPerPageOptions={[8]}
+        pageSize={7}
+        rowsPerPageOptions={[7]}
         className="datagrid"
       />
     </div>

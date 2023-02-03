@@ -1,5 +1,6 @@
 .app.dark{
   background-color: #1a1a1a;
+  transition: all 0.5s ease-in;
 
     // navbar component
     .navbar{
@@ -56,6 +57,7 @@
     //list component
     .dataTable{
       background-color: #1a1a1a;
+      transition: all 0.5s ease-in;
       
         .tableCell{
           color: var(--gray-color);
@@ -79,6 +81,7 @@
     // sidebar
     .sidebar{
       background-color: #1a1a1a;
+      transition: all 0.5s ease;
       border-right: 0.5px solid rgba(167, 167, 167, 0.482);
 
         hr{

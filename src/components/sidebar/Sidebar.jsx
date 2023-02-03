@@ -11,8 +11,13 @@ import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.scss"
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const Sidebar = () => {
+
+  const { dispatch } = useContext(ThemeContext)
+
   return (
     <div className="sidebar" >
       <div className="top">
@@ -84,8 +89,8 @@ const Sidebar = () => {
       <div className="bottomTheme">
         <span>Theme</span>
         <div className="theme">
-          <div className="colorOption light"></div>
-          <div className="colorOption dark"></div>
+          <div className="colorOption light" onClick={()=>dispatch({ type: "LIGHT"})} ></div>
+          <div className="colorOption dark" onClick={()=>dispatch({ type: "DARK"})} ></div>
         </div>
       </div>
     </div>
